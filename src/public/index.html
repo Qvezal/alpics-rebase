@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="ИСПДн, защита персональных данных Челябинск, СКЗИ, категорирование КИИ, Аттестация ИСПДн, СЗПДн, защита информации, информационная безопасность, 152 ФЗ, 187 ФЗ, ФСТЭК России, ФСБ России, аудит ИБ банков">
+    <meta name="description" content="Защита информации и персональных данных по всей территории РФ. Аттестация объектов (ИСПДн, ГИС, ЗОКИИ, АС, помещений), аудит ИБ банков, анализ уязвимостей (pentest)">
+    
+    <meta property="og:title" content="АЛЬПИКС - защита информации и персональных данных">
+    <meta property="og:description" content="Комплексные услуги в области информационной безопасности. Лицензиат ФСТЭК и ФСБ России. Опыт с 2009 года.">
+    <meta property="og:image" content="./img/favicon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sib-alpiks.ru">
+    <meta property="og:locale" content="ru_RU">
+
+    <link href="./img/favicon.png" type="image/png" rel="shortcut icon">
+    <title>АЛЬПИКС</title>
+    <link rel="stylesheet" href="./styles/global.css">
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" async="" src="https://cdn.jsdelivr.net/npm/yandex-metrica-watch/watch.js"></script>
+    <script type="text/javascript">window.quizStatisticIsEnabled = true;</script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=36c5d08b-cfe3-4b8f-8f09-d9541dceb69a" type="text/javascript"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./count.js"></script>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="overlay hide_overlay"></div>
+    <form class="pop_form hide_pop" id="pop_form">
+        <div class="close">
+            <svg class="close_icon" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="14px" height="14px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"/>
+            </svg>
+        </div>
+        <div class="pop_main-form">
+            <h3>Оставить заявку</h3>
+        <div class="pop_input">
+            <label for="phone">Телефон</label>
+            <input type="text" name="phone" placeholder="Телефон*" required id="pop_phone" value="">
+            <span>должен начинаться на +7</span>
+        </div>
+        <div class="submit">
+            <button type="submit">Отправить</button>
+        </div>
+        <p class="agreement">Нажимая на кнопку, вы принимаете <a href="/regulation.html" target="_blank">Положение</a> и <a href="/consent.html" target="_blank">Согласие</a> на обработку персональных данных.</p>
+        </div>
+    </form>
+    <header>
+    <div class="container">
+
+        <nav class="mobile">
+            <div id="burger" class="burger--closed">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <nav class="desktop">
+            <div class="logo">
+                <img src="./img/logo.png" alt="logo">
+            </div>
+            <div class="navigation">
+                <a href="#about"><span class="nav_block">О компании</span></a>
+                <a href="#services"><span class="nav_block">Услуги</span></a>
+                <a href="#sertificates"><span class="nav_block">Лицензии и сертификаты</span></a>
+                <a href="#contacts"><span class="nav_block">Контакты</span></a>
+            </div>
+            <button class="call" onclick="toggle_pop(true)">Заказать звонок</button>
+        </nav>
+        
+    </div>
+
+    <div class="mobile_nav nav--closed">
+        <div class="logo">
+            <img src="./img/logo.png" alt="logo">
+        </div>
+        <div class="navigation">
+            <a href="#about"><span class="nav_block">О компании</span></a>
+            <a href="#services"><span class="nav_block">Услуги</span></a>
+            <a href="#sertificates"><span class="nav_block">Лицензии и сертификаты</span></a>
+            <a href="#contacts"><span class="nav_block">Контакты</span></a>
+        </div>
+        <button class="call" onclick="toggle_pop(true);nav('open')">Заказать звонок</button>
+    </div>
+    </header>
+    <main>
+        <div class="title">
+            <div class="title__logo"></div>
+            <div class="title__text">
+                <h1>Информационная безопасность ИТ систем и процессов</h1>
+                <span>Мы оказываем услуги по защите информации по всей территории РФ</span>
+                <button onclick="toggle_pop(true)">Получить бесплатную консультацию</button>
+            </div>
+            
+        </div>
+        <div class="container">
+            <div class="about" id="about">
+                <h2 class="section_title">НЕМНОГО О НАС</h2>
+                <p>Мы - опытная и стабильно развивающаяся с 2009 года компания,
+                    состоящая из настоящих профессионалов и любителей своего дела, лицензиат ФСТЭК и ФСБ России.
+                    Член Координационно-методического совета организаций-лицензиатов ФСТЭК России и ФСБ России, расположенных в пределах Уральского федерального округа, осуществляющих деятельность в области защиты информации.</p>
+                <div class="advantages">
+                    <div class="advantage">
+                        <h3>ПРОФЕССИОНАЛИЗМ</h3>
+                        <p>В нашем штате опытные специалисты с профильным образованием, которые обеспечивают высокое качество услуг</p>
+                    </div>
+                    <div class="advantage">
+                        <h3>ПРОЗРАЧНОСТЬ</h3>
+                        <p>Мы гарантируем честное ценообразование и выбор оптимального для заказчика решения</p>
+                    </div>
+                    <div class="advantage">
+                        <h3>НАДЕЖНОСТЬ</h3>
+                        <p>Выполняем работу в строго оговоренные сроки в полном соответствии с требованиями регуляторов</p>
+                    </div>
+                </div>
+            </div>
+            <div class="services" id="services">
+                <h2 class="section_title">НАШИ УСЛУГИ</h2>
+                <div class="services_container">
+                    <div class="services_card">
+                        <div>
+                            <div class="card_img img1"></div>
+                            <h3>Защита информационных систем персональных данных</h3>
+                        </div>
+                        <div class="hr"></div>
+                    </div>
+                    <div class="services_card">
+                        <div>
+                            <div class="card_img img2"></div>
+                        <h3>Защита государственных информационных систем</h3>
+                        </div>
+                        <div class="hr"></div>
+                    </div>
+                    <div class="services_card">
+                        <div>
+                            <div class="card_img img3"></div>
+                            <h3>Защита конфиденциальной информации и помещений</h3>
+                        </div>
+                        <div class="hr"></div>
+                    </div>
+                    <div class="services_card">
+                        <div>
+                            <div class="card_img img4"></div>
+                            <h3>Защита объектов критической информационной инфраструктуры</h3>
+                        </div>
+                        <div class="hr"></div>
+                    </div>
+                    <div class="services_card">
+                        <div>
+                            <div class="card_img img5"></div>
+                            <h3>Аттестация информационных систем</h3>
+                        </div>
+                        <div class="hr"></div>
+                    </div>
+                    <div class="services_card">
+                        <div>
+                            <div class="card_img img6"></div>
+                            <h3>Аутсорсинг информационной безопасности</h3>
+                        </div>
+                        <div class="hr"></div>
+                    </div>
+                    <div class="services_card">
+                        <div>
+                            <div class="card_img img7"></div>
+                            <h3>Аудит информационной безопасности банков</h3>
+                        </div>
+                        <div class="hr"></div>
+                    </div>
+                    <div class="services_card">
+                        <div>
+                            <div class="card_img img8"></div>
+                            <h3>Тестирование на проникновение (pentest)</h3>
+                        </div>
+                        <div class="hr"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <div class="container">
+                <div class="form_content">
+                    <h3>Мы найдем решение Вашего вопроса</h3>
+                    <p class="description">Оставьте контакты, и мы вам перезвоним</p>
+                    <form id="main_form">
+                        <div class="inputs">
+                            <input type="text" name="name" placeholder="Имя">
+                            <input type="text" name="phone" placeholder="Телефон*" required id="phone" value="">
+                            <input type="text" name="message" placeholder="Комментарий">
+                        </div>
+                        <button type="submit">Отправить</button>
+                    </form>
+                    <p class="agreement">Нажимая на кнопку, вы принимаете <a href="/regulation.html" target="_blank">Положение</a> и <a href="/consent.html" target="_blank">Согласие</a> на обработку персональных данных.</p>
+                </div>
+            </div>
+            <!-- <div class="overlay_c">
+                <div class="overlay"></div>
+            </div> -->
+        </div>
+        <div class="container">
+            <div class="results">
+                <h2 class="section_title">РЕЗУЛЬТАТЫ В ЦИФРАХ</h2>
+                <p>Сегодня с вопросом обеспечения безопасности информации сталкивается практически каждая организация.</p>
+                <div class="stats">
+                    <div class="stats_block">
+                        <h3><span id="age">12</span> лет</h3>
+                        <p>на рынке услуг информационной безопасности</p>
+                    </div>
+                    <div class="stats_block">
+                        <h3><span id="clients">600</span> + клиентов</h3>
+                        <p>на рынке услуг информационной безопасности</p>
+                    </div>
+                    <div class="stats_block">
+                        <h3><span id="systems">950</span> + систем</h3>
+                        <p>на рынке услуг информационной безопасности</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sertificates" id="sertificates">
+                <h2 class="section_title">Лицензии и сертификаты</h2>
+                <p>Клиенты доверяют нам, и не зря. У нас есть все необходимые лицензии и сертификаты <br> на право выполнения работ, аттестация сотрудников и сертификация ISO.</p>
+                <div class="sertificates_list">
+                    <div class="sertificate">
+                        <div class="sertificate_overlay over1 sert_overlay_closed">
+                            <img src="./img/zoom.svg" alt="zoom" width="30px" height="30px">
+                        </div>
+                        <div class="image_opened license1"></div>
+                        <div class="image_small license1"></div>
+                    </div>
+                    <div class="sertificate">
+                        <div class="sertificate_overlay over2 sert_overlay_closed">
+                            <img src="./img/zoom.svg" alt="zoom" width="30px" height="30px">
+                        </div>
+                        <div class="image_opened license2"></div>
+                        <div class="image_small license2"></div>
+                    </div>
+                    <div class="sertificate">
+                        <div class="sertificate_overlay over3 sert_overlay_closed">
+                            <img src="./img/zoom.svg" alt="zoom" width="30px" height="30px">
+                        </div>
+                        <div class="image_opened license3"></div>
+                        <div class="image_small license3"></div>
+                    </div>
+                    <div class="sertificate">
+                        <div class="sertificate_overlay over4 sert_overlay_closed">
+                            <img src="./img/zoom.svg" alt="zoom" width="30px" height="30px">
+                        </div>
+                        <div class="image_opened license4"></div>
+                        <div class="image_small license4"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contacts" id="contacts">
+                <div class="contact_text">
+                    <h2 class="section_title">КОНТАКТЫ</h2>
+                    <div class="address">
+                        <a class="adress_block" href="https://yandex.ru/maps/-/CCUUnMd0oD">
+                            <img src="./img/place.svg" alt="place" height="26px" width="26px">
+                            <span>454020, г. Челябинск, ул. Курчатова, д.23Б офис 203</span>
+                        </a>
+                        <a class="adress_block" href="tel:+73512408595">
+                            <img src="./img/phone.svg" alt="phone" height="26px" width="26px">
+                            <span>8 (351) 240-85-95</span>
+                        </a>
+                        <a class="adress_block" href="mailto:sib-alpiks@sib-alpiks.ru">
+                            <img src="./img/mail.svg" alt="mail" height="26px" width="26px">
+                            <span>sib-alpiks@sib-alpiks.ru</span>
+                        </a>
+                    </div>
+                    <span class="side_info">
+                    Работаем по будням с 09:00 до 18:00<br><br>
+                    © Системы информационной безопасности АЛЬПИКС 2021
+                </span>
+                </div>
+                <div class="map" id="map"></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
